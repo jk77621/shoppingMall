@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label layoutX="136.0" layoutY="547.0" text="아 이 디">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2d5415" />
+                  <Stop color="#2d5415" offset="0.0078125" />
+                  <Stop color="#9a15bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="136.0" layoutY="624.0" text="비 밀 번 호">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="293.0" layoutY="541.0" prefHeight="30.0" prefWidth="200.0" />
+      <PasswordField fx:id="txtPassword" layoutX="293.0" layoutY="618.0" prefHeight="30.0" prefWidth="200.0" />
+      <Button fx:id="btnLogin" layoutX="131.0" layoutY="697.0" mnemonicParsing="false" text="로그인">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnCancel" layoutX="401.0" layoutY="697.0" mnemonicParsing="false" text="나가기">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStatus2" layoutX="301.0" layoutY="656.0" prefHeight="20.0" prefWidth="200.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnManagerAdd" layoutX="250.0" layoutY="697.0" mnemonicParsing="false" text="관리자 등록" />
+      <Label fx:id="lblStatus1" layoutX="301.0" layoutY="578.0" prefHeight="20.0" prefWidth="200.0">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="108.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ShoppingMallLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

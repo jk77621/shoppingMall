@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="47.0" layoutY="42.0" text="상 품 수 정  (Product Edit)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField id="txtProductNumber" layoutX="149.0" layoutY="132.0" promptText="7071" />
+      <TextField id="txtProductName" layoutX="149.0" layoutY="182.0" promptText="Product Name" />
+      <TextField id="txtProductColor" layoutX="149.0" layoutY="232.0" promptText="Color" />
+      <TextField id="txtProductSize" layoutX="148.0" layoutY="285.0" promptText="Size Number" />
+      <TextField id="txtStock85" layoutX="149.0" layoutY="401.0" promptText="Number" />
+      <TextField id="txtStock90" layoutX="149.0" layoutY="452.0" promptText="Number" />
+      <TextField id="txtStock95" layoutX="149.0" layoutY="500.0" promptText="Number" />
+      <TextField id="txtStock100" layoutX="149.0" layoutY="550.0" promptText="Number" />
+      <TextField id="txtStock105" layoutX="149.0" layoutY="599.0" promptText="Number" />
+      <TextField id="txtStock110" layoutX="149.0" layoutY="649.0" promptText="Number" />
+      <TextField id="txtStock115" layoutX="149.0" layoutY="698.0" promptText="Number" />
+      <VBox alignment="CENTER" layoutX="368.0" layoutY="125.0" prefHeight="200.0" prefWidth="180.0" spacing="15.0">
+         <children>
+            <Label text="소 비 자 가">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="txtCustomerPrice" promptText="Number" />
+            <Label text="할 인 율">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="txtSalePercent" promptText="Number" />
+            <Label text="공 급 가">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="txtSupplyPrice" promptText="Number" />
+            <Label text="판 매 가">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="txtSellPrice" promptText="Number" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="32.0" layoutY="133.0" prefHeight="125.0" prefWidth="117.0" spacing="30.0">
+         <children>
+            <Label text="상 품 번 호">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="상 품 명">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="상 품 색 상">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="32.0" layoutY="401.0" prefHeight="320.0" prefWidth="117.0" spacing="30.0">
+         <children>
+            <Label text="85">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="90">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="95">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="100">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="105">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="110">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="115">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator layoutX="90.0" layoutY="385.0" prefWidth="200.0" />
+      <Separator layoutX="90.0" layoutY="326.0" prefWidth="200.0" />
+      <Label layoutX="129.0" layoutY="346.0" text="사 이 즈 별 재 고">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="52.0" layoutY="86.0" prefHeight="21.0" prefWidth="477.0" />
+      <VBox alignment="CENTER" layoutX="358.0" layoutY="438.0" prefHeight="300.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Label text="상 품 이 미 지">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView id="imgView" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" />
+            <Button id="btnImgView" mnemonicParsing="false" text="이미지 파일 선택" />
+         </children>
+      </VBox>
+      <Button id="btnEdit" layoutX="121.0" layoutY="746.0" mnemonicParsing="false" text="수 정" />
+      <Button id="btnExit" layoutX="201.0" layoutY="746.0" mnemonicParsing="false" text="나가기" />
+      <Label layoutX="44.0" layoutY="290.0" text="상 품 사 이 즈" />
+   </children>
+</AnchorPane>

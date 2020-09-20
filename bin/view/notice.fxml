@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NoticeController">
+   <children>
+      <TableView fx:id="tblList" layoutX="14.0" layoutY="85.0" prefHeight="400.0" prefWidth="800.0" />
+      <Label layoutX="15.0" layoutY="14.0" text="공 지 사 항">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSet" layoutX="823.0" layoutY="117.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="공지사항 등록">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDel" layoutX="823.0" layoutY="168.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="공지사항 삭제">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClose" layoutX="931.0" layoutY="455.0" mnemonicParsing="false" text="닫 기" />
+      <ComboBox fx:id="cbxSearch" layoutX="15.0" layoutY="50.0" prefWidth="120.0" promptText="선택사항" />
+      <TextField fx:id="txtSearch" layoutX="135.0" layoutY="50.0" promptText="내용을 입력해주세요." />
+      <Button fx:id="btnSearch" layoutX="310.0" layoutY="49.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/698627-icon-111-search-512.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView disable="true" fitHeight="400.0" fitWidth="400.0" layoutX="300.0" layoutY="50.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ShoppingMallLogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnList" layoutX="823.0" layoutY="221.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="전체 리스트">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

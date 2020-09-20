@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView id="customerView" layoutX="25.0" layoutY="50.0" prefHeight="500.0" prefWidth="600.0" />
+      <Label layoutX="25.0" layoutY="14.0" text="고객정보리스트">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnExit" layoutX="560.0" layoutY="557.0" mnemonicParsing="false" text="나가기" />
+   </children>
+</AnchorPane>

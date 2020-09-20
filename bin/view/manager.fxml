@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="1200.0" styleClass="root" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="root2" text="재고 현황">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root">
+                     <children>
+                        <TableView fx:id="stockView" layoutX="14.0" layoutY="45.0" prefHeight="500.0" prefWidth="900.0" />
+                        <TextField fx:id="txtSearch1" layoutX="14.0" layoutY="14.0" promptText="의류 번호" />
+                        <Button fx:id="btnSearch1" layoutX="189.0" layoutY="13.0" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/698627-icon-111-search-512.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <ImageView fx:id="imgView" fitHeight="300.0" fitWidth="250.0" layoutX="935.0" layoutY="93.0" pickOnBounds="true" />
+                        <Label layoutX="935.0" layoutY="50.0" text="의류 번호" />
+                        <TextField fx:id="txtField" layoutX="1014.0" layoutY="45.0" />
+                        <Button fx:id="btnAdd" layoutX="1072.0" layoutY="420.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="상품 등록" />
+                        <Button fx:id="btnEdit" layoutX="1072.0" layoutY="482.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="상품 수정" />
+                        <Button fx:id="btnList" layoutX="952.0" layoutY="420.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="상품 초기화" />
+                        <Button fx:id="btnDelete1" layoutX="952.0" layoutY="482.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="상품 삭제" />
+                     </children>
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab styleClass="root2" text="매출 현황">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root">
+                     <children>
+                        <TableView fx:id="sellView1" layoutX="10.0" layoutY="51.0" prefHeight="230.0" prefWidth="1180.0" />
+                        <TableView fx:id="sellView2" layoutX="10.0" layoutY="317.0" prefHeight="230.0" prefWidth="1180.0" />
+                        <Label layoutX="14.0" layoutY="21.0" text="판매 기간" />
+                        <DatePicker fx:id="datePicker1" layoutX="87.0" layoutY="16.0" />
+                        <Label layoutX="302.0" layoutY="21.0" text="~" />
+                        <DatePicker fx:id="datePicker2" layoutX="321.0" layoutY="16.0" />
+                        <Label layoutX="10.0" layoutY="290.0" text="판매 세부검색사항" />
+                        <Button fx:id="btnSearch2" layoutX="532.0" layoutY="16.0" mnemonicParsing="false" text="조회" />
+                        <Button fx:id="btnList2" layoutX="590.0" layoutY="16.0" mnemonicParsing="false" text="초기화" />
+                        <Button fx:id="btnBarChart" layoutX="1020.0" layoutY="285.0" mnemonicParsing="false" text="바차트" />
+                        <Button fx:id="btnPieChart" layoutX="1095.0" layoutY="285.0" mnemonicParsing="false" text="파이차트" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="root2" text="고객 관리">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="47.0" prefHeight="500.0" prefWidth="430.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label text="고객 번호" />
+                                    <TextField fx:id="txtNumber" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label text="고객 성명" />
+                                    <TextField fx:id="txtName" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label text="성별" />
+                                    <RadioButton fx:id="rdoMale" mnemonicParsing="false" text="남성" />
+                                    <RadioButton fx:id="rdoFemale" mnemonicParsing="false" text="여성" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label text="생년월일" />
+                                    <DatePicker fx:id="datePicker3" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="핸드폰 번호" />
+                                    <TextField fx:id="txtPhoneNumber" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label text="적립포인트" />
+                                    <TextField fx:id="txtUserPoint" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="btnCustomerEdit" mnemonicParsing="false" text="고객정보수정" />
+                                    <Button fx:id="btnCustomerAdd" alignment="TOP_LEFT" mnemonicParsing="false" text="고객정보등록" />
+                                    <Button fx:id="btnCustomerClear" mnemonicParsing="false" text="고객정보초기화" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <TableView fx:id="customerView" layoutX="456.0" layoutY="47.0" prefHeight="500.0" prefWidth="730.0" />
+                        <Label layoutX="14.0" layoutY="10.0" styleClass="root3" text="고객 등록" textAlignment="CENTER" />
+                        <Label layoutX="458.0" layoutY="15.0" text="고객명" />
+                        <TextField fx:id="txtSearch2" layoutX="514.0" layoutY="10.0" promptText="이름을 입력해주세요." />
+                        <Button fx:id="btnSearch3" layoutX="689.0" layoutY="10.0" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/698627-icon-111-search-512.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnDelete2" layoutX="1136.0" layoutY="10.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="btnList3" layoutX="1026.0" layoutY="9.0" mnemonicParsing="false" text="전체 리스트" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView disable="true" fitHeight="400.0" fitWidth="400.0" layoutX="405.0" layoutY="121.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ShoppingMallLogo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="1123.0" layoutY="609.0" mnemonicParsing="false" text="나가기" />
+      <Button fx:id="btnProductAdd" layoutX="1022.0" layoutY="609.0" mnemonicParsing="false" text="판매등록" />
+      <Button fx:id="btnNotice" layoutX="920.0" layoutY="609.0" mnemonicParsing="false" text="공지사항" />
+   </children>
+</AnchorPane>

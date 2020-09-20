@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+   <children>
+      <Label layoutX="54.0" layoutY="141.0" text="아이디" />
+      <Label layoutX="54.0" layoutY="180.0" text="패스워드" />
+      <TextField fx:id="txtManagerName" layoutX="158.0" layoutY="95.0" prefWidth="200.0" promptText="관리자명을 입력해주세요." />
+      <TextField fx:id="txtManagerId" layoutX="158.0" layoutY="136.0" prefWidth="200.0" promptText="아이디를 입력해주세요." />
+      <TextField fx:id="txtManagerPassword" layoutX="158.0" layoutY="175.0" prefWidth="200.0" promptText="패스워드를 입력해주세요." />
+      <Label layoutX="45.0" layoutY="41.0" text="관리자 정보 등록">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="246.0" layoutY="230.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnCancel" layoutX="308.0" layoutY="230.0" mnemonicParsing="false" text="취소" />
+      <Button fx:id="btnManagerList" layoutX="84.0" layoutY="230.0" mnemonicParsing="false" text="관리자리스트 보기" />
+      <Label layoutX="54.0" layoutY="100.0" text="관리자명" />
+   </children>
+</AnchorPane>

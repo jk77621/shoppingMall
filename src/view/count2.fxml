@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView id="countView" layoutX="25.0" layoutY="95.0" prefHeight="550.0" prefWidth="450.0" />
+      <Label layoutX="25.0" layoutY="662.0" text="총 액" />
+      <TextField id="txtCount2" layoutX="70.0" layoutY="657.0" />
+      <Button id="btnExit2" layoutX="310.0" layoutY="657.0" mnemonicParsing="false" text="나가기" />
+      <TextField id="txtCustomerSearch" layoutX="25.0" layoutY="56.0" promptText="고객명을 입력하시오." />
+      <Button id="btnCustomerSearch" layoutX="202.0" layoutY="56.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/698627-icon-111-search-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="23.0" layoutY="14.0" text="계 산 창">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

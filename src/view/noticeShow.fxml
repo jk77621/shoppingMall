@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="txtWit" layoutX="54.0" layoutY="77.0" prefWidth="150.0" />
+      <TextField id="txtDate" layoutX="284.0" layoutY="77.0" prefWidth="150.0" />
+      <TextArea id="txaTitle" layoutX="54.0" layoutY="116.0" prefHeight="30.0" prefWidth="630.0" />
+      <TextArea id="txaContents" layoutX="54.0" layoutY="165.0" prefHeight="273.0" prefWidth="630.0" />
+      <Button id="btnCan" layoutX="694.0" layoutY="393.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="92.0" text="나가기">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="12.0" layoutY="292.0" text="내 용" />
+      <Label layoutX="12.0" layoutY="121.0" text="제 목" />
+      <Label layoutX="305.0" layoutY="25.0" text="공 지 사 항  확 인" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="82.0" text="작성자" />
+      <Label layoutX="212.0" layoutY="82.0" text="작성 날짜" />
+   </children>
+</AnchorPane>

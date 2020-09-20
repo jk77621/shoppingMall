@@ -1,0 +1,67 @@
+.root{
+	-fx-background-color:white;
+}
+.root2{
+	-fx-font-weight:bold;
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+.root2:focused{
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+.root3{
+	-fx-font-size:24;
+}
+Label{
+	-fx-font-weight:bold;
+}
+Button{
+	-fx-background-color:white;
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+Button:pressed{
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+TextField{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+TextField:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+TextArea{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+TextArea:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+PasswordField{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+PasswordField:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+ComboBox{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+ComboBox:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+TableView{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+TableView:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
+
+DatePicker{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 1, 1);
+}
+
+DatePicker:focused{
+	-fx-background-color:white;
+	-fx-effect:innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 2, 2);
+}
